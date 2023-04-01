@@ -1,17 +1,28 @@
-//Setting up user input 
+//Packages
 const inquirer = require('inquirer');
+const fs = require('fs');
 
+const generateSVG = require('./lib/svg')
+
+
+//generate a logo.svg file
+function generateFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => 
+        err ? console.error(err) : console.log('Generated logo.svg!!'))
+}
+
+//Setting up user input 
 function MakeLogo() {
     inquirer.prompt ([
         {
             type: 'input',
             message: 'What is the brand name of the company? Give up to three letters:',
-            name: 'name'
+            name: 'text'
         },
         {
             type: 'input',
             message: 'What color will you like this text to be?',
-            name: 'nameColor'
+            name: 'textColor'
         },
         {
             type: 'list',
@@ -25,7 +36,7 @@ function MakeLogo() {
             name: 'shapeColor'
         }
     ]).then((answers) => {
-        console.log(answers)
+        generateFile('logo.svg', generateSVG(answers))
     })
 }  
 
