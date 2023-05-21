@@ -17,6 +17,12 @@ function MakeLogo() {
         {
             type: 'input',
             message: 'What is the brand name of the company? Give up to three letters:',
+            validate: function (input) {
+                if (input.length > 3) {
+                    return "Please use up to three letters"
+                }
+                return true
+            },
             name: 'text'
         },
         {
