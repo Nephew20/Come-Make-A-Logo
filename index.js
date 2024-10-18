@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateSVG = require('./lib/svg')
+const generateSVG = require('./lib/shapes')
 
 
 //generate a logo.svg file
