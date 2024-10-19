@@ -1,6 +1,19 @@
 {
   "dependencies": {
-    "inquirer": "^8.2.4",
+    "inquirer": "^8.2.6",
     "jest": "^29.7.0"
-  }
+  },
+  "name": "come-make-a-logo",
+  "description": "The purpose of this project was to develop a an application that takes in user input that will generate a logo for a user to have.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
