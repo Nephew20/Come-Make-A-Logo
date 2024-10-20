@@ -2,18 +2,18 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateSVG = require('./lib/shapes')
+const { generateSVG } = require('./lib/shapes')
 
 
 //generate a logo.svg file
 function generateFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => 
+    fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('Generated logo.svg!!'))
 }
 
 //Setting up user input 
 function MakeLogo() {
-    inquirer.prompt ([
+    inquirer.prompt([
         {
             type: 'input',
             message: 'What is the brand name of the company? Give up to three letters:',
@@ -44,7 +44,7 @@ function MakeLogo() {
     ]).then((answers) => {
         generateFile('logo.svg', generateSVG(answers))
     })
-}  
+}
 
 
 //call to generate the logo
