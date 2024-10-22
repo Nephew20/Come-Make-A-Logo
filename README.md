@@ -29,7 +29,9 @@ The purpose of this project was to develop a an application that takes in user i
 - Run `node index.js` to run the application 
 - To run the test run `npm run test` in the command line 
 
-Click the link to watch a video of the application functionality : https://drive.google.com/file/d/15q07FvybpJKGq2pW-FLUncswJUtxrcL0/view
+Screen Capture of the Project:
+
+https://github.com/user-attachments/assets/da90468f-906f-48cd-85aa-fbc8aa4e9497
 
 ## Contact Info
 
