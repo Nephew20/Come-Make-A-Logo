@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+//Imports function
 const { generateSVG } = require('./lib/shapes')
 
 

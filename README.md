@@ -19,12 +19,16 @@ The purpose of this project was to develop a an application that takes in user i
 ## Usage 
 
 - Ensure that node is installed on your computer. Go to [Node's Website](https://nodejs.org/en) to find the program to download
-- Download the LTS version 
-- In your command line, type **npm install** to install all of the node modules
+- Download the LTS version
+- `cd/to/file/path`
+- As a precaution, initialize your a default package.json by typing `npm init -y`, you can edit the package.json if need be
+- In your command line, type `npm install` to install all of the node modules
 - Install the following packages for the to be in the dependencies for the package.json 
-  - npm install inquirer
-  - npm install jest
-- Lastly, run **node index.js** to run the application 
+  - `npm install inquirer`
+  - `npm install jest`
+  - **Make sure `jest` is set up in the Scripts object hash in you package.json by assigning it to test**
+- Run `node index.js` to run the application 
+- To run the test run `npm run test` in the command line 
 
 Click the link to watch a video of the application functionality : https://drive.google.com/file/d/15q07FvybpJKGq2pW-FLUncswJUtxrcL0/view
 
